@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)메가트레이딩 - 스테인리스 강판 및 코일 전문 무역회사</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8f8f8; /* 전반적인 밝은 배경 유지 */
+        }
+        /* 각 이미지에 대한 배경 스타일 정의 */
+        .bg-image-coil {
+            /* Image 1.jpeg (스테인리스 코일) */
+            background-image: url('./images/Image 1.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* 스크롤 시 고정 */
+        }
+        .bg-image-container-ship {
+            /* Image 2.jpeg (컨테이너선) */
+            background-image: url('./images/Image 2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Global Network 섹션 내의 이미지는 img 태그로 직접 삽입 */
+        .text-shadow-light {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* 텍스트 가독성을 위한 그림자 */
+        }
+        /* 🚨 문제 해결: 사업 영역 섹션 아래쪽 마진을 늘려 글로벌 네트워크 섹션과 겹치는 문제 해결 */
+        #business {
+            margin-bottom: 8rem; /* 기본 my-16 (4rem)보다 훨씬 큰 8rem으로 설정 */
+        }
+
+        /* 🚨 문제 해결: 글로벌 네트워크 섹션의 텍스트 색상 및 그림자 조정 */
+        #network p {
+            color: #eeeeee; /* 밝은 배경 위에서는 어둡게, 어두운 배경 위에서는 밝게. 여기서는 배경이 어두우므로 밝은 색 유지 */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* 그림자 더 강하게 */
+        }
+    </style>
+</head>
+<body class="text-blue-700">
+
+    <header class="bg-white shadow-lg py-4 px-6 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-blue-800">
+                (주)메가트레이딩 <span class="block text-sm font-normal text-gray-600">Mega Trading Co., Ltd.</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-8 text-base font-medium">
+                    <li><a href="#about" class="hover:text-blue-500 transition duration-300">회사소개</a></li>
+                    <li><a href="#business" class="hover:text-blue-500 transition duration-300">사업영역</a></li>
+                    <li><a href="#network" class="hover:text-blue-500 transition duration-300">글로벌 네트워크</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500 transition duration-300">오시는 길</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20"> <section class="relative bg-image-coil h-[600px] flex items-center justify-center text-white text-center">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div> <div class="relative z-10 p-8">
+                <h1 class="text-6xl font-extrabold mb-4 text-shadow-light">
+                    세계로 나아가는 <span class="block text-7xl">(주)메가트레이딩</span>
+                </h1>
+                <p class="text-3xl font-light text-shadow-light">
+                    스테인리스 강판 및 코일 무역의 글로벌 리더
+                </p>
+                <div class="mt-10">
+                    <a href="#about" class="inline-block bg-blue-600 hover:bg-blue-800 text-white text-lg font-bold py-4 px-8 rounded-full transition duration-300 shadow-xl">
+                        회사 소개 보기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container mx-auto py-20 px-6 bg-white shadow-lg rounded-lg my-16">
+            <h2 class="text-5xl font-extrabold text-center mb-16 border-b-4 border-blue-700 pb-6">회사 소개</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-2xl leading-relaxed mb-8">
+                        (주)메가트레이딩은 2015년 설립 이래, 스테인리스 강판 및 코일 무역 분야에서 탁월한 전문성과 신뢰를 바탕으로 성장해 왔습니다. 급변하는 글로벌 시장 속에서 끊임없는 혁신과 도전을 통해 고객 가치 창출에 기여하고 있습니다.
+                    </p>
+                    <p class="text-xl leading-relaxed">
+                        최고 품질의 스테인리스 제품을 한국, 베트남, 중국, 인도를 비롯한 전 세계 주요 국가에 안정적으로 공급하며, 글로벌 네트워크를 통해 최적의 솔루션을 제공합니다.
+                    </p>
+                    <ul class="mt-8 space-y-4 text-xl">
+                        <li class="flex items-center"><span class="material-icons mr-3 text-blue-500">✓</span> 설립일: 2015년</li>
+                        <li class="flex items-center"><span class="material-icons mr-3 text-blue-500">✓</span> 사업분야: 스테인리스 강판 및 코일, 시트 무역</li>
+                        <li class="flex items-center"><span class="material-icons mr-3 text-blue-500">✓</span> 비전: 글로벌 스테인리스 무역 시장의 선두 주자</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="./imgaes/image 1.jpg" alt="메가트레이딩 회사 전경" class="rounded-xl shadow-2xl w-full h-auto object-cover border-4 border-blue-100">
+                </div>
+            </div>
+        </section>
+
+        <section id="business" class="bg-blue-50 py-20 px-6 my-16">
+            <div class="container mx-auto">
+                <h2 class="text-5xl font-extrabold text-center mb-16 border-b-4 border-blue-700 pb-6">사업 영역</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
+                    <div class="bg-white p-10 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 border-t-8 border-blue-600">
+                        <img src="./imgaes/image 2.jpg" alt="스테인리스 코일" class="mx-auto mb-6 w-32 h-32 object-contain">
+                        <h3 class="text-3xl font-bold mb-4 text-blue-800">스테인리스 코일</h3>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            다양한 규격과 강종의 스테인리스 코일을 전 세계에 공급하며, 고객의 요구에 맞는 맞춤형 솔루션을 제공합니다.
+                        </p>
+                    </div>
+                    <div class="bg-white p-10 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 border-t-8 border-blue-600">
+                        <img src="./images/steel-sheet-icon.jpeg" alt="스테인리스 시트" class="mx-auto mb-6 w-32 h-32 object-contain">
+                        <h3 class="text-3xl font-bold mb-4 text-blue-800">스테인리스 시트</h3>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            고품질 스테인리스 시트를 건축, 산업, 가전 등 다양한 분야에 공급하며, 최적의 품질을 보장합니다.
+                        </p>
+                    </div>
+                    <div class="bg-white p-10 rounded-xl shadow-xl transform hover:scale-105 transition duration-300 border-t-8 border-blue-600">
+                        <img src="./images/special-steel-icon.jpeg" alt="특수강판" class="mx-auto mb-6 w-32 h-32 object-contain">
+                        <h3 class="text-3xl font-bold mb-4 text-blue-800">특수강판 및 가공품</h3>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            고객 맞춤형 특수강판 및 정밀 가공품을 통해 부가가치를 창출하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="network" class="relative pt-40 pb-20 px-6 text-white text-center bg-image-container-ship h-[700px] flex items-center justify-center">
+            <div class="absolute inset-0 bg-blue-900 bg-opacity-70"></div> <div class="relative z-10 container mx-auto p-8">
+                <h2 class="text-5xl font-extrabold mb-16 text-shadow-light border-b-4 border-white pb-6">글로벌 네트워크</h2>
+                <p class="text-2xl leading-relaxed mb-12 text-shadow-light text-gray-200">
+                    (주)메가트레이딩은 한국, 베트남, 중국, 인도를 중심으로 전 세계를 아우르는 강력한 무역 네트워크를 구축하고 있습니다.
+                </p>
+                <div class="flex justify-center items-center">
+                    <img src="./imgaes/image 3.webp" alt="글로벌 무역 네트워크 지도" class="w-full max-w-4xl h-auto rounded-xl shadow-2xl border-4 border-blue-300">
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-xl font-medium">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-2xl mb-2 text-white">한국</h3>
+                        <p class="text-gray-200">본사 및 주요 수출입 거점</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-2xl mb-2 text-white">베트남 (하이퐁)</h3>
+                        <p class="text-gray-200">동남아시아 거점 지사</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-2xl mb-2 text-white">중국</h3>
+                        <p class="text-gray-200">주요 생산 및 공급처</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-2xl mb-2 text-white">인도</h3>
+                        <p class="text-gray-200">신흥 시장 및 수출입 파트너</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container mx-auto py-20 px-6 bg-white shadow-lg rounded-lg my-16">
+            <h2 class="text-5xl font-extrabold text-center mb-16 border-b-4 border-blue-700 pb-6">오시는 길</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-blue-800">본사</h3>
+                    <p class="text-xl mb-4">
+                        <strong class="block">주소:</strong> 서울시 강남구 테헤란로 323, 409호 (역삼동, 휘닉스 빌딩)
+                    </p>
+                    <p class="text-xl mb-4">
+                        <strong class="block">전화:</strong> +82-2-XXX-XXXX
+                    </p>
+                    <p class="text-xl mb-4">
+                        <strong class="block">이메일:</strong> info@megatrading.co.kr
+                    </p>
+                    <div class="mt-8">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.757390977467!2d127.04257851531065!3d37.50209937980838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f70f6f7b11%3A0x8f3c7d6b8c1d3c0!2sPhoenix%20Building!5e0!3m2!1sen!2skr!4v1678901234567!5m2!1sen!2skr" 
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-blue-800">지사</h3>
+                    <div class="mb-8">
+                        <h4 class="text-2xl font-semibold mb-2">시화 지사</h4>
+                        <p class="text-xl">주소: 경기도 시흥시 정왕동 (상세 주소 필요)</p>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold mb-2">베트남 하이퐁 지사</h4>
+                        <p class="text-xl">주소: Vietnam Hai Phong (상세 주소 필요)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-blue-800 text-white py-10 px-6 text-center">
+        <div class="container mx-auto">
+            <p class="text-xl mb-4">(주)메가트레이딩 | Mega Trading Co., Ltd.</p>
+            <p class="text-base">
+                본사: 서울시 강남구 테헤란로 323, 409호 (역삼동, 휘닉스 빌딩)
+            </p>
+            <p class="text-base mt-2">
+                © 2024 Mega Trading Co., Ltd. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
